@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ccc;
+}
+
+header{
+    position: relative;
+    z-index: 10;
+    height: 70px;
+    background-color: #131921;
+    color: white;
+}
+
+/*Boot css*/
+
+
+.center{
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex{display: flex;}
+
+.align-flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.aling-flex-end{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*fim boot*/
+
+.center__logo{padding: 0 10px;}
+
+.center__logo img{
+    width: 140px;
+}
+
+.center__input{
+    padding: 0 10px;
+    width: 40%;
+    display: flex;
+}
+
+.center__input form{
+    width: 100%;
+    display: flex;
+}
+
+.center__input input[type=text]{
+    width: calc(100% - 40px);
+    height: 40px;
+    border: 0;
+    border-radius: 5px 0 0px 5px;
+}
+
+.center__input button{
+    background-color: #FEBD69;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.center__text{
+    height: 50px;
+    font-size: 12px;
+    margin: 8px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.center__text:hover{
+    border-radius: 3px; ;
+    outline: 1px solid white;
+}
+
+.center__text p{
+    white-space: nowrap;
+}
+
+/* Banner Principal*/
+
+.center__vitrini{
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.center__box__vitrini{
+    position: relative;
+    top: 15px;
+    width: 22%;
+    background-color: white;
+    padding: 8px 12px;
+    
+}
+
+.center__box__vitrini a{
+    color: #069;
+    font-size: 13px;
+}
+
+.center__box__vitrini img{
+    width: 100%;
+}
+
+/*
+logica carrosel
+*/
+
+.center__vitrini__galeria{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.center__vitrini__galeria img{position: relative;}
+
+.center__vitrini__galeria__wrap{
+    display: flex;
+}
+
